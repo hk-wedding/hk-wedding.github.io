@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--[if !IE]><!-->
-<html lang="en-US"> <!--<![endif]-->
+<html lang="en-US"> <!--<![endif]-->ga
 
 <head>
 	<meta charset="UTF-8">
@@ -780,45 +780,44 @@
 													<div class="row align-items-center">
 														<div class="col-xl-8 col-lg-6 col-12">
 															<div class="wpo-static-hero-inner">
-																<style>
-																	.shape-1 {
+																<style>										
+.shape-1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;        /* takes full width of the parent or screen */
-  padding: 40px 0;    /* adds space but doesn’t break layout */
+  width: 100%;        /* full width */
+  padding: 40px 0;    /* top/bottom space */
 }
 
 .shape-1 img {
- max-width: 23% !important;
-    height: auto;
-    display: block;
-    margin-right: 22% !important;
-   padding-bottom: 1px !important;
+  max-width: 23% !important;  /* desktop size */
+  height: auto;
+  display: block;
+  margin-right: 22% !important;
+  padding-bottom: 1px !important;
 }
-	@media (max-width: 600px) {
-  .shape-1 img {
-   max-width: 50% !important;
-    height: auto;
-    display: block;
-    margin-right: 0% !important;
+
+/* For screens ≤ 768px (tablet) */
+@media (max-width: 768px) {
+  .static-hero .shape-1 {
     padding-bottom: 1px !important;
-}
   }
-}
-																	@media (max-width: 768px) {
-    .static-hero .shape-1 {
-        padding-bottom: 1px !important;
-    }
-	 .shape-1 img {
-   max-width: 30% !important;
-    height: auto;
-    display: block;
+
+  .shape-1 img {
+    max-width: 30% !important;
     margin-right: 1% !important;
     padding-bottom: 1px !important;
-}																	
+  }
 }
-																		
+
+/*  For screens ≤ 600px (mobile) */
+@media (max-width: 600px) {
+  .shape-1 img {
+    max-width: 50% !important;
+    margin-right: 0 !important;
+    padding-bottom: 1px !important;
+  }
+}
 
 																</style>
 																 <div class="shape-1" >
